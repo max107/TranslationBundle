@@ -1,0 +1,23 @@
+{
+    "name": "max107/translation-bundle",
+    "description": "Symfony Tool to help Import/Export (missing) translations",
+    "keywords": [
+        "symfony",
+        "translation"
+    ],
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Michel NAUD",
+            "role": "Author"
+        }
+    ],
+    "require": {
+    },
+    "autoload": {
+        "psr-4": {
+            "Max107\\Bundle\\TranslationBundle\\": ""
+        }
+    }
+}

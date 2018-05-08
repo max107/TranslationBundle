@@ -1,0 +1,15 @@
+services:
+    kilik.translation.services.load_translation_service:
+        public: true
+        arguments: ['%kernel.root_dir%']
+        class: Max107\Bundle\TranslationBundle\Services\LoadTranslationService
+
+    kilik.translation.command.export:
+        class: Max107\Bundle\TranslationBundle\Command\ExportCommand
+        tags:
+            - { name: console.command }
+
+    kilik.translation.command.import:
+        class: Max107\Bundle\TranslationBundle\Command\ImportCommand
+        tags:
+            - { name: console.command }
